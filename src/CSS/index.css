@@ -1,0 +1,53 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #24242400;
+  position: absolute;
+  z-index: 0;
+  scroll-behavior: smooth !important;
+  touch-action: manipulation; /* Prevents zoom gestures */
+  -webkit-user-select: none; /* Prevents text selection */
+}
+body {
+  height: fit-content; /* Ensures enough scrollable space */
+  overflow-x: hidden;
+  scrollbar-width: 0; /* Firefox */
+  -ms-overflow-style: 0; /* Internet Explorer 10+ */
+  scroll-behavior: smooth !important;
+  touch-action: manipulation; /* Prevents zoom gestures */
+  -webkit-text-size-adjust: 100%; /* Prevents automatic text scaling */
+}
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+  touch-action: manipulation; /* Prevents zoom gestures */
+  -webkit-user-select: none; /* Prevents text selection */
+}
+canvas {
+  pointer-events: auto;
+}
+/* main */
+.main {
+  height: fit-content;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  touch-action: manipulation; /* Prevents zoom gestures */
+  -webkit-user-select: none; /* Prevents text selection */
+}
+.htmlScreen iframe {
+  width: 1167px;
+  height: 919px;
+  border: none;
+  z-index: 1000;
+  /* border-radius: 40px; */
+  background: #ffffff;
+  touch-action: manipulation; /* Prevents zoom gestures */
+  -webkit-user-select: none; /* Prevents text selection */
+}
+a {
+  text-decoration: none;
+}
